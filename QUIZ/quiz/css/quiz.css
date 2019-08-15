@@ -1,0 +1,291 @@
+* {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+i {
+  -webkit-transition: none!important;
+  -moz-transition: none!important;
+  transition: none!important;
+}
+body {
+  overflow-x:hidden!important;
+  overflow-y:hidden;
+  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+  background-color: rgb(110, 172, 123);
+}
+a:hover {
+  text-decoration: none;
+}
+#loading {
+  position:absolute;top:0;left:0;width:100%;height:100%; background:#000000;z-index:1520;color:#2d2578;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#loading i {
+  top:40%;
+  left:45%;
+  position: absolute;
+  font-size: 100px;
+  animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+.navbar-default {
+  background-color: rgb(110, 172, 123);
+  border-color: transparent;
+  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+  font-weight: 200;
+  letter-spacing: 1px;
+  -webkit-box-shadow: 0px 1px 11px 3px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 1px 11px 3px rgba(0,0,0,0.5);
+  box-shadow: 0px 1px 11px 3px rgba(0,0,0,0.5);
+}
+.navbar-default .navbar-header .navbar-brand {
+  width:200px;
+  height:100px;
+  background-image: url('http://www.ufrpe.br/sites/www.ufrpe.br/files/Logo%20UFRPE%20com%20texto_2.png');
+  background-repeat: no-repeat;
+  margin: 5px 0 5px 10px;
+}
+.navbar-default .navbar-header .navbar-toggle {
+  font-size: 12px;
+  color: #fff;
+  padding: 8px 10px;
+}
+.navbar-header button {
+  margin: 11px 15px 5px 0;
+}
+.navbar-default .nav > li > a {
+  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 11px;
+}
+.navbar-default .nav > li > a,
+.navbar-default .nav > li > a:focus {
+  color: #fff;
+}
+.navbar-default .nav > li > a:hover,
+.navbar-default .nav > li > a:focus:hover {
+  color: #080702;
+}
+.navbar-default .nav > li.active > a,
+.navbar-default .nav > li.active > a:focus {
+  color: #080702 !important;
+  background-color: transparent;
+}
+.navbar-default .nav > li.active > a:hover,
+.navbar-default .nav > li.active > a:focus:hover {
+  background-color: transparent;
+}
+@media (min-width: 768px) {
+  .navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+    padding: 15px 0;
+    -webkit-box-shadow: 0px 1px 11px 3px rgba(0,0,0,0);
+    -moz-box-shadow: 0px 1px 11px 3px rgba(0,0,0,0);
+    box-shadow: 0px 1px 11px 3px rgba(0,0,0,0);
+  }
+  .navbar-default .navbar-header .navbar-brand {
+    background-image: url('http://www.ufrpe.br/sites/www.ufrpe.br/files/Logo%20UFRPE%20com%20texto_2.png');
+    transform: scale(1.2,1.2);
+    margin-left: 200px;
+    backgroun-size: contain
+  }
+  .navbar-default .navbar-header .navbar-brand:hover,
+  .navbar-default .navbar-header .navbar-brand:focus {
+    background-image: url('http://www.ufrpe.br/sites/www.ufrpe.br/files/Logo%20UFRPE%20com%20texto_2.png');
+  }
+  .navbar-default .nav > li > a,
+  .navbar-default .nav > li > a:focus {
+    padding: 10px 12px;
+    border: 2px solid #030303;
+    color:#080805;
+    font-weight: bold;
+    background-color: transparent;
+    border-radius: 4px;
+  }
+  .navbar-default .nav > li > a:hover,
+  .navbar-default .nav > li > a:focus:hover {
+    color: #222;
+    background-color: #000000;
+    border-color: #000000;
+    -webkit-box-shadow: 0px 10px 10px -6px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 10px 10px -6px rgba(0,0,0,0.5);
+    box-shadow: 0px 10px 10px -6px rgba(0,0,0,0.5)
+  }
+  .navbar-default.affix {
+    background-color: rgb(110, 172, 123);
+    border-color: rgba(34, 34, 34, 0.1);
+    -webkit-box-shadow: 0px 1px 11px 3px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 1px 11px 3px rgba(0,0,0,0.5);
+    box-shadow: 0px 1px 11px 3px rgba(0,0,0,0.5);
+  }
+  .navbar-default.affix .navbar-header .navbar-brand {
+    background-image: url('http://www.mobileufrpe.com.br/olinda/img/logo-olinda.svg');
+  }
+  .navbar-default.affix .navbar-header .navbar-brand:hover,
+  .navbar-default.affix .navbar-header .navbar-brand:focus {
+    background-image: url('http://www.mobileufrpe.com.br/olinda/img/logo-olindaW.svg');
+  }
+  .navbar-default.affix .nav > li > a,
+  .navbar-default.affix .nav > li > a:focus {
+    color: #fff;
+  }
+  .navbar-default.affix .nav > li > a:hover,
+  .navbar-default.affix .nav > li > a:focus:hover {
+    color: #000000;
+  }
+}
+div.append-brand {
+  color:#000000;
+  font-size: 35px;
+  margin: 35px 0 0 330px;
+  position: absolute;
+}
+section.home-jogos {
+  padding: 150px 0;
+  color:#000000;
+}
+
+div.btns-sites {
+  margin-top: 20px;
+}
+
+footer {
+  padding: 15px 0 0;
+  width: 100%;
+  background-color: #222;
+  color:white;
+  font-weight: 500;
+  font-size: 15px;
+  position: fixed;
+  bottom: 0;
+}
+footer a {
+  color:#000000;
+}
+footer a:hover {
+  color:#fff;
+  text-decoration: none;
+}
+
+#quiz {
+    display:none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+}
+#quiz h3 {
+  font-weight: bold;
+  margin-bottom: 2em;
+}
+
+.btn-game {
+  border: 1px solid #000000;
+  padding: 5px 10px;
+  border-radius: 4px;
+  position: relative;
+  float:right;
+  color: #000000;
+  margin: 1rem 1rem 0 0;
+  font-weight: bold;
+}
+
+.btn-game:hover,
+.btn-game:focus,
+.btn-game:active,
+.btn-game.active {
+  color: #222;
+  background-color: #000000;
+  border-color: #000000;
+  -webkit-box-shadow: 0px 10px 10px -6px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 10px 10px -6px rgba(0,0,0,0.5);
+  box-shadow: 0px 10px 10px -6px rgba(0,0,0,0.5)
+}
+#container {
+    margin:auto;
+    padding: 20px 25px;
+    background-color: transparent;
+    border:2px solid #000000;
+    border-radius:5px;
+    color: #000000;
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.2);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 2rem;
+}
+.red {
+  color: red;
+}
+.green {
+  color:green;
+}
+#start {
+    display:none;
+}
+
+#quiz ul li {
+  position: relative;
+  padding-left: 30px;
+  margin-top: 12px;
+  font-size: 18px;
+}
+input[type=radio] {
+  visibility: hidden;
+}
+
+input[type=radio]:before {
+  cursor: pointer;
+  visibility: visible;
+  content: "";
+  display: inline-block;
+
+  width: 20px;
+  height: 20px;
+
+  margin: 0 5px 5px 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 100%;
+  border: 2px solid #000000;
+  background-color: transparent;
+}
+
+input[type=radio]:checked:before {
+    content: "\2022";
+    color: #000000;
+    font-size: 58px;
+    text-align: center;
+    line-height: 39%;
+}
+
+@media (max-width:767px) {
+  #loading i {
+    left: 36%;
+    font-size: 80px;
+  }
+  div.append-brand {
+    margin: 17px 0 0 0;
+    left: 3%;
+    position: relative;
+    font-size: 20px;
+  }
+  section.home-jogos {
+    padding: 12rem 0 0;
+  }
+  section.home-jogos i {
+    display: none;
+  }
+  section#about {
+    padding: 30px 0;
+  }
+  footer {
+    text-align: center;
+  }
+}

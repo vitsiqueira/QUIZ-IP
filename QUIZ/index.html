@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Gabriel Lourenço">
+    <meta name="theme-color" content="#ffcc00">
+
+    <title>Quiz de Computação</title>
+
+    <!-- Favicon -->
+    <link href="http://www.ufrpe.br/sites/www.ufrpe.br/files/Marcas%20UFRPE-02.jpg" rel="shorcut icon">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="http://www.mobileufrpe.com.br/olinda/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:200,300,400,700" rel="stylesheet">
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="http://www.mobileufrpe.com.br/olinda/vendor/font-awesome/css/font-awesome.min.css">
+
+    <!-- Theme CSS -->
+    <link href="css/quiz.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top" onload="liberar()">
+
+  <div id="loading">
+    <i class="fa fa-circle-o-notch fa-spin fa-fw"></i>
+    <span class="sr-only">Loading...</span>
+  </div>
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand page-scroll" href="/olinda"></a>
+                <div class="append-brand">| Quiz de Computação</div>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/olinda/jogos">Voltar para o menu</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <section class="home-jogos">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-offset-1 col-md-10">
+
+            <div id='container'>
+          			<div id='quiz'></div>
+                <div class="row">
+              		<a href='#'><div class='btn-game' id='next'>Próxima</div></a>
+              		<a href='#'><div class='btn-game' id='start'>Jogar Novamente</div></a>
+                </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row col-md-offset-1">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Mobile UFRPE 2017</span>
+                </div>
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline">
+                        <li><a href="http://www.ufrpe.br/br" target="_blank">UFRPE</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="http://www.mobileufrpe.com.br/olinda/vendor/jquery/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="http://www.mobileufrpe.com.br/olinda/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <!-- Theme JavaScript -->
+    <script src="js/loadSite.js"></script>
+    <script type='text/javascript' src='js/questions.js'></script>
+    <script type='text/javascript' src='js/jsquiz.js'></script>
+</body>
+</html>
